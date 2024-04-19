@@ -6,19 +6,21 @@ import Earnings from "./components/earnings/Earnings";
 import Status from "./components/status/Status";
 import Subscribe from "./components/subscribe/Subscribe";
 import Footer from "./components/footer/Footer";
+import Register from "./main/register/Register";
 
 function App() {
 
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/>
       <Hero/>
       <Companies/>
       <Pricing/>
       <Earnings/>
       <Status/>
       <Subscribe/>
-      <Footer/>
+      <Footer/> */}
+      <Register/>
     </>
   )
 }
