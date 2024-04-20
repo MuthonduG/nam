@@ -5,6 +5,9 @@ import Dashboard from './main/dashboard/Dashboard';
 import Map from './main/map/Map';
 import Geocoding from './main/geocoding/Geocoding';
 import Onboard from './main/onboard/Onboard';
+import Assetlist from './main/assetlist/Assetlist';
+import Portfolios from './main/portfolios/Portfolios';
+import Asset from './main/asset/Asset';
 
 function App() {
 
@@ -18,6 +21,9 @@ function App() {
           <Route path='/map' element={<Map/>} />
           <Route path='/geocode' element={<Geocoding/>} />
           <Route path='/onboard' element={<Onboard/>} />
+          <Route path='/asset-list' element={<Assetlist/>} />
+          <Route path='/portfolio-list' element={<Portfolios/>} />
+          <Route path='/asset' element={<Asset/>} />
         </Routes>
       </Router>
     </>

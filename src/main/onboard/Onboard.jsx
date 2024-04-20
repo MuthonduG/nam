@@ -39,7 +39,7 @@ const Onboard = () => {
             <Sidebar/>
           </div>
           <div className="onboard__container-home">
-            <article className="onboard__form-card">
+            <article className="onboard__form-card" data-aos="fade-up">
                 <form action="" className="onboard__form">
                     <div className="onboard__form-input">
                         <label htmlFor="">Company Name:</label>

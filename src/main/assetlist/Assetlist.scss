@@ -1,0 +1,9 @@
+@import "../../styles/mixins.scss";
+
+.asset__list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    line-height: 3;
+}
