@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Landing from "./main/landing/Landing";
 import Register from "./main/register/Register"
 import Dashboard from './main/dashboard/Dashboard';
+import Map from './main/map/Map';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Landing/>} />
           <Route path='/register' element={<Register/>} />
           <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='/map' element={<Map/>} />
         </Routes>
       </Router>
     </>
