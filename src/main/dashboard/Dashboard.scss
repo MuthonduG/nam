@@ -1,9 +1,71 @@
 @import "../../styles/mixins.scss";
 
 .dashboard {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: aliceblue;
     color: var(--dark);
+
+    &__container {
+        display: grid;
+        grid-template-columns: 20% 79%;
+        gap: 1%;
+
+        article {
+            border: 2px solid rgb(181, 181, 181);
+            padding: 2rem;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            box-shadow: .5rem 0 .5rem .5rem rgb(181, 181, 181);
+            border-radius: 0.75rem;
+        }
+
+        &-home {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+            place-items: center;
+            width: 80%;
+
+            @include respond(phone) {
+                grid-template-columns: 1fr;
+                margin-left: 5rem;
+            }
+        }
+    }
+
+    &__container-sidebar {
+        width: 80rem;
+    }
+
+    &__content-body {
+        display: flex;
+        gap: 3rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            gap: 1rem;
+        }
+    }
+
+    &__content-card-title {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1.4rem;
+        padding: 1rem;
+
+        span {
+            margin-top: -.35rem;
+        }
+    }
+
 }
 
