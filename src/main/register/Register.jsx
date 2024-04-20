@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./Register.scss"
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc";
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 const Register = () => {
     const [isSignUpActive, setIsSignUpActive] = useState(false);
@@ -10,8 +13,12 @@ const Register = () => {
         setIsSignUpActive(!isSignUpActive);
     }
 
+    useEffect(()=> {
+        Aos.init({ duration: 3000 })
+    })
+
     return (
-        <section className={`register ${isSignUpActive ? 'right-panel-active' : ''}`}>
+        <section className={`register ${isSignUpActive ? 'right-panel-active' : ''}`}  data-aos="fade-up">
             <div className={isSignUpActive ? "register__container" : "register__login"}>
                 <form action="#">
                     <h1>{isSignUpActive ? 'Create Account' : 'Sign In'}</h1>
