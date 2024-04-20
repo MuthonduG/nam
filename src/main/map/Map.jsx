@@ -7,7 +7,7 @@ export default function Map() {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const point = { lng: 5.89782, lat: 49.52704 };
-  const [zoom] = useState(14);
+  const [zoom] = useState(15.5);
   maptilersdk.config.apiKey = 'CkO8aZeUYHNZgUtHESYD';
 
   useEffect(() => {
